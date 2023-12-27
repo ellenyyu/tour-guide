@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search</title>
+</head>
+<body>
+    <h1>Wikipedia Search</h1>
+    <form method="post">
+        <label for="search_query">Search Wikipedia:</label>
+        <input type="text" id="search_query" name="search_query" required>
+        <button type="submit">Search</button>
+    </form>
+    {% if result %}
+        <h2>Search Results for '{{ search_query }}':</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search</title>
+    <style>
+        body {
+            background-color: teal;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        label {
+            color: white;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: white;
+            color: teal;
+            border: none;
+            cursor: pointer;
+        }
+
+        h2, p {
+            color: white; /* Change text color for better visibility on teal background */
+        }
+
+        /* Add your TourGuide logo styling here */
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 300px; /* Adjust the width as needed */
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="TourGuide Logo" class="logo">
+<!--     <h1>Wikipedia Search</h1> -->
+    <form method="post">
+        <label for="search_query">Search Wikipedia:</label>
+        <input type="text" id="search_query" name="search_query" required>
+        <button type="submit">Search</button>
+    </form>
+    {% if result %}
+        <h2>Search Results for '{{ search_query }}':</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
