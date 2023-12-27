@@ -21,8 +21,8 @@ def index():
         tts_text = result[:500]  # Convert the first 500 characters to speech
         audio_file_path = text_to_speech(tts_text)
         #play_audio(audio_file_path)
-        return render_template('templates/index.html', result=result, search_query=search_query)
-    return render_template('templates/index.html')
+        return render_template('index.html', result=result, search_query=search_query)
+    return render_template('index.html')
 
 def search_wikipedia(query):
     page_py = wiki_wiki.page(query)
